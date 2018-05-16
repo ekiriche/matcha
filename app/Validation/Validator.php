@@ -20,7 +20,6 @@ class Validator
                 $this->errors[$field] = $e->getMessages();
             }
         }
-        session_start();
         $_SESSION["errors"] = $this->errors;
         
         return $this;
