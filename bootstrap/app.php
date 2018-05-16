@@ -1,7 +1,5 @@
 <?php
 
-session_start();
-
 require __DIR__ . '/../vendor/autoload.php';
 
 $app = new \Slim\App([
@@ -28,6 +26,9 @@ $container['view'] = function($container) {
 $container['validator'] = function($container) {
 	return new \App\Validation\Validator;
 };
+
+$app->add(new \App\Middleware\ValidationErrorsMiddleware($container));
+$app->add(new \App\Middleware\OldInputMiddleware($container));
 
 $container['HomeController'] = function($container) {
 	return new \App\Controllers\HomeController($container);

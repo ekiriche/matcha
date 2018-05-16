@@ -16,9 +16,9 @@ class AuthController extends Controller
     public function postSignup($request, $response)
     {
         $validation = $this->validator->validate($request, [
-            'login' => v::noWhitespace()->notEmpty(), 
-            'email' => v::noWhitespace()->notEmpty(), 
-            'password' => v::noWhitespace()->notEmpty(), 
+            'login' => v::noWhitespace()->notEmpty()->length(4, 16)->alnum(), 
+            'email' => v::notEmpty()->alnum()->email(), 
+            'password' => v::notEmpty()->noWhitespace()->alnum()->length(6, 32), 
         ]);
         
         if ($validation->failed())
