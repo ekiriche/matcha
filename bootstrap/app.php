@@ -35,6 +35,10 @@ $container['view'] = function($container) {
 	return $view;
 };
 
+$container['SendMail'] = function($container) {
+	return new \App\SendMail\SendMail;
+};
+
 $container['validator'] = function($container) {
 	return new \App\Validation\Validator;
 };

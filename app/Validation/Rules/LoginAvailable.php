@@ -5,16 +5,15 @@ namespace App\Validation\Rules;
 use Respect\Validation\Rules\AbstractRule;
 use App\Config\db;
 
-class EmailAvailable extends AbstractRule
+class LoginAvailable extends AbstractRule
 {
-	public function validate($input)
+	public function validate($login)
 	{
 		$db = new db();
 		$db = $db->connect();
 
-		$sql = "SELECT * FROM `users` WHERE `email` = ?";
-		$stm = $db->prepare($sql);
-		$stm->bindParam(1, $input);
+		$stm = $db->prepare("SELECT * FROM users WHERE login = ?");
+		$stm->bindParam(1, $login);
 		$stm->execute();
 		if ($stm->rowCount() == 0)
 			return true;
