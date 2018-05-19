@@ -1,0 +1,17 @@
+{% if flash.getMessage('signed_up') %}
+	<div class="alert alert-success">
+		{{ flash.getMessage('signed_up') | first }}
+	</div>
+{% endif %}
+
+{% if flash.getMessage('confirmed_email') %}
+	<div class="alert alert-success">
+		{{ flash.getMessage('confirmed_email') | first }}
+	</div>
+{% endif %}
+
+{% if flash.getMessage('failed_signin') %}
+	<div class="alert alert-danger">
+		{{ flash.getMessage('failed_signin') | first }}
+	</div>
+{% endif %}

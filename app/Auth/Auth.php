@@ -51,6 +51,19 @@ class Auth
 		$stm->execute();
 		return true;
 	}
+
+	public function checkEmailExists($email)
+	{
+		$db = new db();
+		$db = $db->connect();
+
+		$stm = $db->prepare("SELECT * FROM users WHERE email = ?");
+		$stm->bindParam(1, $email);
+		$stm->execute();
+		if ($stm->rowCount() == 0)
+			return false;
+		return true;
+	}
 }
 
 ?>

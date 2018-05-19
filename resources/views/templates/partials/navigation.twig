@@ -20,13 +20,14 @@
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
                            aria-haspopup="true" aria-expanded="false">{{ auth.user }}<span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">Change password</a></li>
+                            <li><a href="#">Edit profile</a></li>
                             <li><a href="{{ path_for('auth.signout') }}">Sign out</a></li>
                         </ul>
                    </li>
                 {% else %}
                     <li><a href="{{ path_for('auth.signup') }}">Sign up</a></li>
                     <li><a href="{{ path_for('auth.signin') }}">Sign in</a></li>
+                    <li><a href="{{ path_for('auth.forgot') }}">Forgot password?</a></li>
             {% endif %}
             </ul>
         </div>

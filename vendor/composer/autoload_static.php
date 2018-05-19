@@ -21,6 +21,7 @@ class ComposerStaticInit0dab0d3a8e5e32bcf0ff40e29396b1a3
             'Symfony\\Polyfill\\Mbstring\\' => 26,
             'Slim\\Views\\' => 11,
             'Slim\\PDO\\' => 9,
+            'Slim\\Flash\\' => 11,
             'Slim\\' => 5,
         ),
         'R' => 
@@ -62,6 +63,10 @@ class ComposerStaticInit0dab0d3a8e5e32bcf0ff40e29396b1a3
         'Slim\\PDO\\' => 
         array (
             0 => __DIR__ . '/..' . '/slim/pdo/src/PDO',
+        ),
+        'Slim\\Flash\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/slim/flash/src',
         ),
         'Slim\\' => 
         array (
