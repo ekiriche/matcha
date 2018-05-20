@@ -22,8 +22,10 @@ class Auth
 		$db = $db->connect();
 
 		$hashed_password = hash("sha256", $password);
-		$sql = "SELECT * FROM `users` WHERE `login` = '$login' AND `password` = '$hashed_password'";
+		$sql = "SELECT * FROM `users` WHERE `login` = ? AND `password` = ? AND `is_authorised` = 1";
 		$stm = $db->prepare($sql);
+		$stm->bindParam(1, $login);
+		$stm->bindParam(2, $hashed_password);
 		$stm->execute();
 		if ($stm->rowCount() == 0)
 			return false;
@@ -41,8 +43,9 @@ class Auth
 		$db = new db();
 		$db = $db->connect();
 
-		$sql = "SELECT * FROM `users` WHERE `reg_link` = '$reg_link'";
+		$sql = "SELECT * FROM `users` WHERE `reg_link` = ?";
 		$stm = $db->prepare($sql);
+		$stm->bindParam(1, $reg_link);
 		$stm->execute();
 		if ($stm->rowCount() == 0)
 			return false;

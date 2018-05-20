@@ -20,7 +20,7 @@
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
                            aria-haspopup="true" aria-expanded="false">{{ auth.user }}<span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">Edit profile</a></li>
+                            <li><a href="{{ path_for('profile.edit') }}">Edit profile</a></li>
                             <li><a href="{{ path_for('auth.signout') }}">Sign out</a></li>
                         </ul>
                    </li>

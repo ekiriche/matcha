@@ -57,6 +57,10 @@ $container['AuthController'] = function($container) {
 	return new \App\Controllers\Auth\AuthController($container);
 };
 
+$container['ProfileController'] = function($container) {
+	return new \App\Controllers\Profile\ProfileController($container);
+};
+
 $app->add(new \App\Middleware\ValidationErrorsMiddleware($container));
 $app->add(new \App\Middleware\OldInputMiddleware($container));
 

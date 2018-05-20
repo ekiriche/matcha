@@ -11,6 +11,9 @@ $app->get('/auth/confirm', 'AuthController:confirmSignin')->setName('auth.confir
 $app->get('/auth/forgot', 'AuthController:getForgotPassword')->setName('auth.forgot');
 $app->post('/auth/forgot', 'AuthController:postForgotPassword');
 
+$app->get('/profile/edit', 'ProfileController:getEditProfile')->setName('profile.edit');
+$app->post('/profile/edit', 'ProfileController:postEditProfile');
+
 $app->get('/auth/signout', 'AuthController:getSignout')->setName('auth.signout');
 
 ?>
