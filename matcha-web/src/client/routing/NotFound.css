@@ -1,0 +1,137 @@
+/*-- main --*/
+
+.agileits-main {
+    height: 100vh;
+    font-family: 'Raleway', sans-serif;
+    background: url(./1.jpeg);
+    background-size: auto;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	background-size:cover;
+
+}
+.agileinfo-row {
+    width: 65%;
+    margin:0 auto;
+}
+.agileinfo-row {
+    width: 87%;
+}
+p.w3lstext {
+    font-size: 0.9em;
+    color: #e05915;
+    line-height: 1.8em;
+    font-weight: 400;
+    width: 65%;
+    text-transform: capitalize;
+    margin: 1.5em auto 2.5em;
+}
+p.w3lstext a {
+    color: #fbb034;
+	padding-right:10px;
+}
+p.w3lstext a:hover{
+    color: #ffffff;
+}
+
+/*-- //errortext --*/
+.w3layouts-errortext{
+    padding-top:4em;
+    text-align: center;
+    color: #e05915;
+}
+.w3layouts-errortext h2{
+    font-size: 14em;
+    letter-spacing: 20px;
+    color: #fff;
+}
+.w3layouts-errortext {
+    padding-top: 5em;
+    text-align: center;
+}
+@media(max-width:736px){
+.w3layouts-errortext {
+    padding-top: 3em;
+}
+}
+@media(max-width:667px){
+.w3layouts-errortext {
+    padding-top: 2em;
+}
+}
+
+@media(max-width:667px){
+.w3layouts-errortext {
+    padding-top: 2em;
+}
+}
+@media(max-width:414px){
+.w3layouts-errortext h2 {
+    font-size: 9em;
+}
+.w3layouts-errortext {
+    padding-top: 2em;
+}
+}
+@media(max-width:480px){
+.w3layouts-errortext {
+    padding-top: 6em;
+}
+}
+@media(max-width:414px){
+.w3layouts-errortext h2 {
+    font-size: 9em;
+}
+.w3layouts-errortext {
+    padding-top: 2em;
+}}
+@media(max-width:384px){
+.w3layouts-errortext {
+    padding-top: 1em;
+}
+.w3layouts-errortext h2 {
+    letter-spacing: 10px;
+}
+}
+@media(max-width:320px){
+.w3layouts-errortext {
+    padding-top: 0em;
+}
+
+.w3layouts-errortext h2 {
+    font-size: 7em;
+}
+}
+
+@media(max-width:1080px){
+    .agileinfo-row {
+        width: 75%;
+    }
+}
+@media(max-width:900px){
+    .agileinfo-row {
+        width: 85%;
+    }
+}
+/*-- responsive-design --*/
+@media(max-width:1366px){
+p.w3lstext {
+    width: 75%;
+}
+}
+
+
+@media(max-width:991px){
+p.w3lstext {
+    width: 85%;
+}
+}
+
+@media(max-width:667px){
+p.w3lstext {
+    width: 100%;
+    font-size: 0.85em;
+    line-height: 2em;
+}
+
+}

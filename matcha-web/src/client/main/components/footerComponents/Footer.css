@@ -1,0 +1,23 @@
+.footer_bottom {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
+}
+
+.footerBackground {
+  background-color: #bccbde !important;
+}
+.footerTextColor {
+  color: white;
+}
+
+
+@media screen and (max-width: 767px) {
+  /*.footer_bottom {
+    position: unset;
+  }*/
+}

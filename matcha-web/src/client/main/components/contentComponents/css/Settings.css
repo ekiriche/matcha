@@ -1,0 +1,30 @@
+.margin-top-bottom {
+  margin-top: 0.5%;
+  margin-bottom: 0.5%;
+}
+
+.settings-padding {
+  padding: 2%;
+  background: #e6e9f0;
+}
+
+.heightSettings {
+  height: auto;
+}
+
+.settings-background {
+  background-color: #e6e9f0;
+/*
+  background: url(./BeFunky-collage-min.jpg);
+  background-size: auto;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	background-size:cover;
+*/
+}
+select {
+    display: block !important;
+}
+nav .brand-logo {
+    margin: 0 !important;
+}

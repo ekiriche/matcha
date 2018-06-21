@@ -1,0 +1,65 @@
+.brand-logo {
+  animation: colorchange 50s;
+  animation: colorchange 5s infinite;
+}
+.nav-wrapper {
+  background-color: #bccbde !important;
+}
+
+.headerBackground {
+  background-color: #bccbde !important;
+}
+.headerTextColor {
+  color: #e05915;
+}
+.navBoxshadow-none {
+  box-shadow: none !important;
+}
+.sidenav {
+  width: 180px !important;
+}
+
+@media only screen and (max-width: 992px) {
+  .nav-fix {
+    left: 0% !important;
+    transform: translateX(0%) !important;
+  }
+}
+
+
+@keyframes colorchange
+{
+   0%   {color: #b9e0f1;}
+   10%  {color: #5db8e0;}
+   20%  {color: #2fa4d7;}
+   30%  {color: #2fa4d7;}
+   40%  {color: #189ad3;}
+   50%  {color: #ffc0cb;}
+   60%  {color: #ffc6d0;}
+   70%  {color: #ffccd5;}
+   80%  {color: #ffd2da;}
+   90%  {color: #ffd9df;}
+   100% {color: #ffdfe5;}
+}
+
+@media screen and (max-width: 767px) {
+  nav ul a {
+      -webkit-transition: background-color .3s;
+      transition: background-color .3s;
+      font-size: 0.7rem;
+      color: #fff;
+      display: block;
+      padding: 0 3px;
+      cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  nav .brand-logo {
+      position: absolute;
+      color: #fff;
+      display: inline-block;
+      font-size: 1.3rem;
+      padding: 0;
+  }
+}

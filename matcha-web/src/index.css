@@ -1,0 +1,21 @@
+body {
+  position: relative;
+  margin: 0;
+  padding-bottom: 5rem;
+  min-height: 100%;
+  background-color: #c2dde6;
+  /*animation: backgroundchange 50s;
+  animation: backgroundchange 5s infinite;*/
+}
+
+html {
+  height: 100vh;
+}
+
+@keyframes backgroundchange
+{
+   25%  {background-color: ##dbe9d8;}
+   50%  {background-color: #c2dde6;}
+   75%  {background-color: #b0aac2;}
+   100%  {background-color: #e6e9f0;}
+}

@@ -1,0 +1,141 @@
+.margin-top-bottom {
+  margin-top: 0.5%;
+  margin-bottom: 0.5%;
+}
+
+.prfile-padding {
+  padding: 2%;
+  background: #e6e9f0;
+}
+
+.heightProfile {
+  height: auto;
+}
+
+.profile-background {
+  background-color: #e6e9f0;
+/*
+  background: url(./BeFunky-collage-min.jpg);
+  background-size: auto;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	background-size:cover;
+*/
+}
+.btn-report {
+  margin: 5px 10px;
+  background-color: #431c5d !important;
+}
+.profileButtomWidth {
+  background-color: #431c5d;
+  width: 100%;
+}
+.connected {
+  color: #52bf90;
+}
+.block-margin {
+  margin-left: 30px;
+}
+.disconnected {
+  color: #d73232;
+}
+.popularity {
+  font-weight: bold;
+}
+.indeterminate {
+  background-color: #431c5d !important;
+}
+.likes-position {
+  position: relative;
+  top: -100px;
+  left: 20px;
+  }
+.like {
+  background-color: #52bf90;
+}
+.btn-small-profile {
+    height: 22.4px;
+    line-height: 24.4px;
+    font-size: 8px;
+}
+.profile-report-btn-margin {
+  margin: 0 12px !important;
+}
+.chips-profile-view {
+  height: 50px;
+  width: 100%;
+}
+.chips-profile-view>img {
+    height: 50px;
+    width: 50px;
+}
+.btn-disabled {
+  margin: 5px 5px 5px 0 !important;
+}
+
+.img-slider {
+  width: 695px;
+  height: 450px;
+}
+
+/*
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .img-slider {
+    width: 695px;
+    height: 350px;
+  }
+}
+
+/*
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .img-slider {
+    width: 630px;
+    height: 457px;
+  }
+
+}
+
+/*
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .img-slider {
+    width: 630px;
+    height: 430px;
+  }
+}
+
+/*
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .img-slider {
+    width: 337px;
+    height: 301px;
+  }
+
+}
+
+/*
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .img-slider {
+    width: 337px;
+    height: 301px;
+  }
+}

@@ -1,0 +1,89 @@
+
+.contentHeight {
+  height: 15em;
+}
+
+.heightFull {
+  height: 100%;
+}
+
+.btn-color {
+  background: #431c5d;
+}
+
+.card-height {
+  min-height: 540px !important;
+  height: 100%;
+}
+
+.invalidInput {
+  color: red;
+}
+.linkActive {
+  background: #431c5d;
+}
+.loginTabMargin {
+  margin: 1% !important;
+}
+.alert {
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.alert-success {
+  color: #3c763d;
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+}
+
+.alert-danger {
+  color: #a94442;
+  background-color: #f2dede;
+  border-color: #ebccd1;
+}
+.registrationFormError {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.margin-mobile {
+  margin-top: 10%;
+}
+@keyframes colorchange
+{
+   0%   {color: #b9e0f1;}
+   10%  {color: #5db8e0;}
+   20%  {color: #2fa4d7;}
+   30%  {color: #2fa4d7;}
+   40%  {color: #189ad3;}
+   50%  {color: #ffc0cb;}
+   60%  {color: #ffc6d0;}
+   70%  {color: #ffccd5;}
+   80%  {color: #ffd2da;}
+   90%  {color: #ffd9df;}
+   100% {color: #ffdfe5;}
+}
+@media screen and (max-width: 767px) {
+  .margin-mobile {
+    margin-top: 5%;
+  }
+  #myVideo {
+   display: none !important;
+ }
+ .App {
+  background: url(background.jpeg) #000;
+  background-size: auto;
+  min-width: 100%;
+  min-height: 100%;
+ }
+}
+
+@media only screen and (min-width: 993px) {
+  .textMainPosition {
+    font-size: 2em;
+  }
+  .margin-mobile {
+
+  }
+}

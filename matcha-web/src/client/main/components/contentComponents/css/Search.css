@@ -1,0 +1,25 @@
+.input-range {
+  margin: 15px 0;
+}
+.card-yellow {
+  background-color: #cdd422 !important;
+}
+.input-range__slider,
+.input-range__track--active  {
+    background: #431c5d !important;
+    border: 1px solid #431c5d !important;
+  }
+  .btn-center {
+    text-align: center;
+  }
+  .sort-table {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+  }
+
+@media screen and (max-width: 767px) {
+  [type="checkbox"]+span:not(.lever) {
+    padding-left: 20px;
+  }
+}

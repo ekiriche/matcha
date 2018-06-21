@@ -1,0 +1,23 @@
+.chat-width {
+      width: 500px;
+}
+@media screen and (max-width: 767px) {
+  .chat-width {
+        width: 400px;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .chat-width {
+        width: 300px;
+  }
+}
+
+
+
+@media screen and (max-width: 479px) {
+  .chat-width {
+        width: 250px;
+  }
+}
