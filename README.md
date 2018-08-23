@@ -41,5 +41,4 @@ At least with Firefox (>= 41) and Chrome (>= 46).
 ### Global user map
 ![Map](/screenshots/MatchaGlobalMap.png)
 
-## Final grade
-125/100
+## Final grade - 125/100(max)
