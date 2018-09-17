@@ -8,8 +8,8 @@ the profile of other users, like them, chat with those that “liked” back.
 ## Install
 1. `cd matcha-web` && `npm install`
 2. `cd src/php` && `./composer.phar update`
-3. `cd app/CharServer` && `php ChatServer.php`
-4. `cd ~/matcha-we/` && `npm start`
+3. `cd app/ChatServer` && `php ChatServer.php`
+4. `cd ~/matcha-web/` && `npm start`
 
 ## Authorized tools
 For this project you are free to use the language you want.
